@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg__container">
+        <img src="./images/Polygon1.png" alt="">
+        <img src="./images/Polygon2.png" alt="">
+    </div>
+    <nav class="nav" id="navBar">
+        <p class="logo">Market Boost</p>
+        <div class="nav__links">
+            <a class="nav__link" href="./index.html">Home</a>
+            <a class="nav__link" href="./suscripciones.html">Suscripciones</a>
+            <a class="nav__link" href="./contact.html">Contacto</a>
+            <a class="nav__link" href="./sobreNosotros.html">Sobre Nosotros</a>
+            <a class="nav__btn" href="./suscripciones.html">Comenzar Ahora</a>
+        </div>
+    </nav>
+
+    <div class="form__container">
+        <h2>Contacto</h2>
+        <form id="contactForm" class="contact-form" action="">
+            <label for="name">Nombre</label>
+            <input id="name" type="text">
+            <label for="email">Email</label>
+            <input id="email" type="text">
+            <label for="message">Mensaje</label>
+            <input id="message" type="text">
+            <p id="errorMessage"></p>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="captchaContainer" class="captcha__container hidden">
+        <p id="captchaText"></p>
+        <form id="captchaForm" class="images__container-form">
+            <div class="image-container">
+                <img class="captcha-img" src="./images/captcha/captcha1/captcha1_a.jpg" alt="">
+                <input type="checkbox" name="" id="">
+            </div>
+            <div class="image-container">
+                <img class="captcha-img" src="./images/captcha/captcha1/captcha1_b.jpg" alt="">
+                <input type="checkbox" name="" id="">
+
+            </div>
+            <div class="image-container">
+                <img class="captcha-img" src="./images/captcha/captcha1/captcha1_c.jpg" alt="">
+                <input type="checkbox" name="" id="">
+
+            </div>
+            <div class="image-container">
+                <img class="captcha-img" src="./images/captcha/captcha1/captcha1_d.jpg" alt="">
+                <input type="checkbox" name="" id="">
+            </div>
+            <button>Enviar</button>
+        </form>
+
+    </div>
+    <p id="successMessage" class="hidden">Mensaje enviado con exito</p>
+</body>
+<script src="./Javascripts/main.js"></script>
+
+</html>
